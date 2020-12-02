@@ -1,13 +1,12 @@
-
-on: [push, pull_request]
+on: [push,pull_request]
 jobs:
-maanam:
-steps:
-- run: echo hello world
-- uses: actions/checkout@v2
-- run: g++ -o main main.c
-- run: ./main
-runs-on: ${{matrix.platform}}
-strategy:
-matrix:
-platform: [macos-latest, windows-latest, ubuntu-latest]
+  job_id:
+    steps:
+      - run: echo Hello World
+      - uses: actions/checkout@v2
+      - run: g++ -o main 02.12.cpp
+      - run: ./main
+    runs-on: ${{matrix.platform}}
+    strategy:
+      matrix:
+        platform: [macos-latest, windows-latest, ubuntu-latest]
