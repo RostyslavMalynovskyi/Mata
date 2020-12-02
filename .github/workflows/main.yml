@@ -1,5 +1,6 @@
 on: [push,pull_request]
 jobs:
   maanam:
+    steps:
     - run: echo Hello world
-  runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
