@@ -16,5 +16,3 @@ int main()
     default_random_engine e1(r());
     return liczbaLosowa(e1, 1, 6);
 }
-
-
