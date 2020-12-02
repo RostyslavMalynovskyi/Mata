@@ -14,5 +14,5 @@ int main()
 {
     random_device r;
     default_random_engine e1(r());
-    return liczbaLosowa(e1, 1, 6);
+    for (int n = 1 ; n <= 10 ; n++)    cout << liczbaLosowa(e1, 1, 6) << endl;
 }
