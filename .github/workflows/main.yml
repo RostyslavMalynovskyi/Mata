@@ -4,7 +4,7 @@ jobs:
     steps:
       - run: echo Hello World
       - uses: actions/checkout@v2
-      - run: g++ -o main 02.12.cpp
+      - run: g++ -o main Liczby_losowe.cpp
       - run: ./main
     runs-on: ${{matrix.platform}}
     strategy:
